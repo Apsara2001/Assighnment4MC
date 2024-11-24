@@ -9,6 +9,16 @@ const GameTable = () => {
 
     
    
+      useEffect(() => {
+             randomAnimalName()
+         }, [])
+
+ 
+      const randomAnimalName=(()=>{
+        const rand=  Math.floor(Math.random() * 10) + 1;
+        setAnimalName(animals[rand]);
+        setGameStatus('');
+         })
      
       const handleClick=((e)=>{
         if(e === animalName.name){
