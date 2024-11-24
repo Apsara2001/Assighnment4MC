@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import '../assets/css/main.css'
-import {animals} from '../assets/data/data.js'
+import '../assests/css/main.css'
+import {animals} from '../assests/data/data.js'
 
 const GameTable = () => {
     {/* State to store name of random animal and store game status */}
@@ -58,7 +58,7 @@ const GameTable = () => {
                     <td><div>
                          <div className='imgtags'>{animals.map(animal=>
                         <div  onClick={()=>handleClick(animal.name)}>
-                            <img src={require(`../assets/images/${animal.img}`)} alt='img' className='imgCard' />
+                            <img src={require(`../assests/images/${animal.img}`)} alt='img' className='imgCard' />
                             </div>
                         
                     )}</div></div></td>
